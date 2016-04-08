@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,36 +15,63 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v67-hj-Ur7">
-                                <rect key="frame" x="329" y="146" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fFe-35-3As">
+                                <rect key="frame" x="78" y="35" width="287" height="31"/>
                                 <connections>
-                                    <action selector="button2:" destination="BYZ-38-t0r" eventType="touchDown" id="nO4-vX-PTD"/>
+                                    <action selector="widthValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Uyw-gZ-BnD"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8L-Lv-O5u">
-                                <rect key="frame" x="252" y="146" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZlY-aU-SyD">
+                                <rect key="frame" x="78" y="70" width="287" height="31"/>
                                 <connections>
-                                    <action selector="button1:" destination="BYZ-38-t0r" eventType="touchDown" id="cqc-Vt-V9v"/>
+                                    <action selector="heightValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="sjj-9c-g7o"/>
                                 </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aiT-WR-iKI">
-                                <rect key="frame" x="92" y="199" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="width" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYJ-Bo-Fkf">
+                                <rect key="frame" x="11" y="39" width="43" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="vsD-j3-hxI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sef-Hm-FIY">
+                                <rect key="frame" x="8" y="74.5" width="49" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="Guv-Ui-xBV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fFe-35-3As" firstAttribute="leading" secondItem="EYJ-Bo-Fkf" secondAttribute="trailing" constant="26" id="BLW-GO-Qnw"/>
+                            <constraint firstItem="ZlY-aU-SyD" firstAttribute="top" secondItem="fFe-35-3As" secondAttribute="bottom" constant="5" id="Byi-Xc-Q3W"/>
+                            <constraint firstItem="fFe-35-3As" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="35" id="EmV-oA-4VO"/>
+                            <constraint firstItem="EYJ-Bo-Fkf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="39" id="Klf-yw-Uil"/>
+                            <constraint firstItem="ZlY-aU-SyD" firstAttribute="leading" secondItem="sef-Hm-FIY" secondAttribute="trailing" constant="23" id="Z0g-wK-Mre"/>
+                            <constraint firstItem="ZlY-aU-SyD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="4" id="aqp-J7-KXM"/>
+                            <constraint firstItem="fFe-35-3As" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="4" id="iD9-M2-KvD"/>
+                            <constraint firstItem="EYJ-Bo-Fkf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-5" id="oJb-0P-Nwp"/>
+                            <constraint firstItem="sef-Hm-FIY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="r15-S2-Qo7"/>
+                            <constraint firstItem="sef-Hm-FIY" firstAttribute="top" secondItem="EYJ-Bo-Fkf" secondAttribute="bottom" constant="15" id="xxG-ii-WiM"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="heightSlider" destination="ZlY-aU-SyD" id="W9b-A4-Zi7"/>
+                        <outlet property="widthSlider" destination="fFe-35-3As" id="vSs-eC-q86"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="212.5" y="197.5"/>
         </scene>
     </scenes>
 </document>

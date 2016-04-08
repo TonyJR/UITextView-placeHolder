@@ -165,6 +165,7 @@
 				TargetAttributes = {
 					EAA8E7981CB3BFDF00837815 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 5Z7FQT4J56;
 					};
 					EAA8E7B11CB3BFDF00837815 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -345,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = UITextView_placeHolder_ext/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.coco3g.UITextView-placeHolder-ext";
@@ -356,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = UITextView_placeHolder_ext/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.coco3g.UITextView-placeHolder-ext";

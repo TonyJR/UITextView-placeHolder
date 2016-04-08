@@ -23,11 +23,11 @@
 +(void)load{
     [super load];
     //swap selecter
-//        [self swapSelecter:@selector(init) withSelecter:@selector(init_placeHolder)];
-        [self swapSelecter:@selector(initWithFrame:) withSelecter:@selector(initWithFrame_placeHolder:)];
-        [self swapSelecter:@selector(initWithCoder:) withSelecter:@selector(initWithCoder_placeHolder:)];
-        [self swapSelecter:@selector(setText:) withSelecter:@selector(setText_placeHolder:)];
-//        [self swapSelecter:@selector(drawRect:) withSelecter:@selector(drawRect_placeHolder:)];
+    [self swapSelecter:@selector(initWithFrame:) withSelecter:@selector(initWithFrame_placeHolder:)];
+    [self swapSelecter:@selector(initWithCoder:) withSelecter:@selector(initWithCoder_placeHolder:)];
+    [self swapSelecter:@selector(setText:) withSelecter:@selector(setText_placeHolder:)];
+    [self swapSelecter:@selector(setFrame:) withSelecter:@selector(setFrame_placeHolder:)];
+
 }
 
 
@@ -108,6 +108,13 @@
     return self;
 }
 
+-(void)drawRect:(CGRect)rect{
+    [super drawRect:rect];
+    
+    [self placeHolderResize];
+}
+
+
 #pragma mark swapped selecters
 - (instancetype)initWithFrame_placeHolder:(CGRect)frame
 {
@@ -121,6 +128,11 @@
         }
     }
     return self;
+}
+
+-(void)setFrame_placeHolder:(CGRect)frame{
+    [self setFrame_placeHolder:frame];
+    [self setNeedsDisplay];
 }
 
 - (instancetype)initWithCoder_placeHolder:(NSCoder *)coder
@@ -137,11 +149,6 @@
 }
 
 
--(void)drawRect:(CGRect)rect{
-    [super drawRect:rect];
-    
-    [self placeHolderResize];
-}
 
 -(void)setText_placeHolder:(NSString *)text{
     [self setText_placeHolder:text];
@@ -181,6 +188,14 @@
         }
         
         label.translatesAutoresizingMaskIntoConstraints = YES;
+    }
+}
+
+-(void)setFont_placeHolder:(UIFont *)font{
+    [self setFont_placeHolder:font];
+    if ([self placeHolderExist]) {
+        //refresh placeHolderLabel font
+        self.placeHolderLabel.font = self.placeHolderFont;
     }
 }
 
