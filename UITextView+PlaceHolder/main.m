@@ -1,8 +1,8 @@
 //
 //  main.m
-//  UITextView_placeHolder_ext
+//  UITextView+PlaceHolder
 //
-//  Created by Tony on 16/4/5.
+//  Created by Tony on 16/4/8.
 //  Copyright © 2016年 Tony. All rights reserved.
 //
 

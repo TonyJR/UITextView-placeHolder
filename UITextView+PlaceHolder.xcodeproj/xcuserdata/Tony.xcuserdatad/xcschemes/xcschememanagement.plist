@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>UITextView_placeHolder_ext.xcscheme</key>
+		<key>UITextView+PlaceHolder.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>EAA8E7981CB3BFDF00837815</key>
+		<key>EAF408761CB7B5E400D65862</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EAA8E7B11CB3BFDF00837815</key>
+		<key>EAF4088F1CB7B5E500D65862</key>
 		<dict>
 			<key>primary</key>
 			<true/>

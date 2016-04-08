@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "UITextView+Placeholder."
+  s.name         = "UITextView+Placeholder_ext"
   s.version      = "0.1.1"
   s.summary      = "Add placeholder to UITextView.Perfect support autolayout."
   s.homepage     = "https://github.com/TonyJR/UITextView-PlaceHolder"

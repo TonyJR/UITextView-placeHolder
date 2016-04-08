@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:UITextView_placeHolder_ext.xcodeproj">
+      location = "self:UITextView+PlaceHolder.xcodeproj">
    </FileRef>
 </Workspace>

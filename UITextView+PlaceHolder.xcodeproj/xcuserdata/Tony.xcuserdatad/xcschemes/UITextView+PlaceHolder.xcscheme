@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EAA8E7981CB3BFDF00837815"
-               BuildableName = "UITextView_placeHolder_ext.app"
-               BlueprintName = "UITextView_placeHolder_ext"
-               ReferencedContainer = "container:UITextView_placeHolder_ext.xcodeproj">
+               BlueprintIdentifier = "EAF408761CB7B5E400D65862"
+               BuildableName = "UITextView+PlaceHolder.app"
+               BlueprintName = "UITextView+PlaceHolder"
+               ReferencedContainer = "container:UITextView+PlaceHolder.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EAA8E7B11CB3BFDF00837815"
-               BuildableName = "UITextView_placeHolder_extTests.xctest"
-               BlueprintName = "UITextView_placeHolder_extTests"
-               ReferencedContainer = "container:UITextView_placeHolder_ext.xcodeproj">
+               BlueprintIdentifier = "EAF4088F1CB7B5E500D65862"
+               BuildableName = "UITextView+PlaceHolderTests.xctest"
+               BlueprintName = "UITextView+PlaceHolderTests"
+               ReferencedContainer = "container:UITextView+PlaceHolder.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EAA8E7981CB3BFDF00837815"
-            BuildableName = "UITextView_placeHolder_ext.app"
-            BlueprintName = "UITextView_placeHolder_ext"
-            ReferencedContainer = "container:UITextView_placeHolder_ext.xcodeproj">
+            BlueprintIdentifier = "EAF408761CB7B5E400D65862"
+            BuildableName = "UITextView+PlaceHolder.app"
+            BlueprintName = "UITextView+PlaceHolder"
+            ReferencedContainer = "container:UITextView+PlaceHolder.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,10 +65,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EAA8E7981CB3BFDF00837815"
-            BuildableName = "UITextView_placeHolder_ext.app"
-            BlueprintName = "UITextView_placeHolder_ext"
-            ReferencedContainer = "container:UITextView_placeHolder_ext.xcodeproj">
+            BlueprintIdentifier = "EAF408761CB7B5E400D65862"
+            BuildableName = "UITextView+PlaceHolder.app"
+            BlueprintName = "UITextView+PlaceHolder"
+            ReferencedContainer = "container:UITextView+PlaceHolder.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -84,10 +84,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EAA8E7981CB3BFDF00837815"
-            BuildableName = "UITextView_placeHolder_ext.app"
-            BlueprintName = "UITextView_placeHolder_ext"
-            ReferencedContainer = "container:UITextView_placeHolder_ext.xcodeproj">
+            BlueprintIdentifier = "EAF408761CB7B5E400D65862"
+            BuildableName = "UITextView+PlaceHolder.app"
+            BlueprintName = "UITextView+PlaceHolder"
+            ReferencedContainer = "container:UITextView+PlaceHolder.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
