@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UITextView+placeHolder.h"
+#import "UITextView+PlaceHolder.h"
 
 @interface ViewController ()
 

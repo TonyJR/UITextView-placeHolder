@@ -14,7 +14,7 @@
 		EAA8E7A91CB3BFDF00837815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA8E7A81CB3BFDF00837815 /* Assets.xcassets */; };
 		EAA8E7AC1CB3BFDF00837815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA8E7AA1CB3BFDF00837815 /* LaunchScreen.storyboard */; };
 		EAA8E7B71CB3BFDF00837815 /* UITextView_placeHolder_extTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA8E7B61CB3BFDF00837815 /* UITextView_placeHolder_extTests.m */; };
-		EAA8E7C31CB3C09600837815 /* UITextView+placeHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA8E7C21CB3C09600837815 /* UITextView+placeHolder.m */; };
+		EAF8663C1CB7B10D000D86A7 /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF8663B1CB7B10D000D86A7 /* UITextView+PlaceHolder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		EAA8E7B21CB3BFDF00837815 /* UITextView_placeHolder_extTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITextView_placeHolder_extTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA8E7B61CB3BFDF00837815 /* UITextView_placeHolder_extTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextView_placeHolder_extTests.m; sourceTree = "<group>"; };
 		EAA8E7B81CB3BFDF00837815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAA8E7C11CB3C09600837815 /* UITextView+placeHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+placeHolder.h"; sourceTree = "<group>"; };
-		EAA8E7C21CB3C09600837815 /* UITextView+placeHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+placeHolder.m"; sourceTree = "<group>"; };
+		EAF8663A1CB7B10D000D86A7 /* UITextView+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PlaceHolder.h"; sourceTree = "<group>"; };
+		EAF8663B1CB7B10D000D86A7 /* UITextView+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PlaceHolder.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,8 @@
 		EAA8E79B1CB3BFDF00837815 /* UITextView_placeHolder_ext */ = {
 			isa = PBXGroup;
 			children = (
+				EAF8663A1CB7B10D000D86A7 /* UITextView+PlaceHolder.h */,
+				EAF8663B1CB7B10D000D86A7 /* UITextView+PlaceHolder.m */,
 				EAA8E79F1CB3BFDF00837815 /* AppDelegate.h */,
 				EAA8E7A01CB3BFDF00837815 /* AppDelegate.m */,
 				EAA8E7A21CB3BFDF00837815 /* ViewController.h */,
@@ -93,8 +95,6 @@
 				EAA8E7AA1CB3BFDF00837815 /* LaunchScreen.storyboard */,
 				EAA8E7AD1CB3BFDF00837815 /* Info.plist */,
 				EAA8E79C1CB3BFDF00837815 /* Supporting Files */,
-				EAA8E7C11CB3C09600837815 /* UITextView+placeHolder.h */,
-				EAA8E7C21CB3C09600837815 /* UITextView+placeHolder.m */,
 			);
 			path = UITextView_placeHolder_ext;
 			sourceTree = "<group>";
@@ -218,9 +218,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA8E7A41CB3BFDF00837815 /* ViewController.m in Sources */,
+				EAF8663C1CB7B10D000D86A7 /* UITextView+PlaceHolder.m in Sources */,
 				EAA8E7A11CB3BFDF00837815 /* AppDelegate.m in Sources */,
 				EAA8E79E1CB3BFDF00837815 /* main.m in Sources */,
-				EAA8E7C31CB3C09600837815 /* UITextView+placeHolder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

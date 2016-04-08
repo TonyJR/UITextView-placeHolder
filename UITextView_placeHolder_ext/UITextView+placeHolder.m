@@ -1,17 +1,17 @@
 //
-//  UITextView+placeHolder.m
-//  UITextView_placeHolder_ext
+//  UITextView+PlaceHolder.m
+//  UITextView_PlaceHolder_ext
 //
 //  Created by Tony on 16/4/5.
 //  Copyright © 2016年 Tony. All rights reserved.
 //
 
-#import "UITextView+placeHolder.h"
+#import "UITextView+PlaceHolder.h"
 #import <objc/runtime.h>
 
 
 
-@implementation UITextView (placeHolder)
+@implementation UITextView (Placeholder)
 
 
 #define k_text_view_place_holder            @"text_view_place_holder"
@@ -209,9 +209,7 @@
         result.font = self.placeHolderFont;
         result.textColor = self.placeHolderColor;
         result.userInteractionEnabled = NO;
-        
-        NSLog(@"%f",result.font.pointSize);
-        
+                
         if (self.text.length > 0) {
             result.alpha = 0;
         }else{
