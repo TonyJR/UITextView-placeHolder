@@ -1,10 +1,27 @@
-# UITextView-placeHolder
----------------
+# UITextView+PlaceHolderExt
+===========================
+
+[![CocoaPods](http://img.shields.io/cocoapods/v/UITextView+Placeholder.svg?style=flat)](http://cocoapods.org/?q=name%3AUITextView%2BPlaceholder)
+
 This is as category of UITextView, in order to add a placeHolder.
-Tt's used like UITextField. You can just do like this.
+
+Installation
+------------
+Use [CocoaPods](http://cocoapods.org).
+
+```ruby
+pod 'UITextView+PlaceholderExt'
+```
+
+Usage
+-----
+
+Create `UITextView` by code/xib/storyboard, then set `placeholder`.
 
 ```objc
 textView.placeHolder = @"place holder string";
 ```
 
-Whatever the textView is created by coder,xib or storyboard.
+License
+-------
+UITextView+PlaceholderExt is under MIT license. See LICENSE for more information.
