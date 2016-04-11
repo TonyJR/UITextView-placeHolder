@@ -3,7 +3,7 @@
 
 [![CocoaPods](http://img.shields.io/cocoapods/v/UITextView+PlaceholderExt.svg?style=flat)](http://cocoapods.org/?q=name%3AUITextView%2BPlaceholder)
 
-This is an category of UITextView, in order to add a placeHolder.
+This is a category of UITextView, in order to add a placeHolder.
 
 Installation
 ------------
